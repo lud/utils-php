@@ -1,3 +1,3 @@
 <?php
 
-exit("You loaded me");
+function r($x) { return dump_r($x); }
