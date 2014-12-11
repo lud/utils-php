@@ -1,0 +1,11 @@
+{
+    "name": "lud/utils",
+    "description": "Utility tools for PHP",
+    "authors": [
+        {
+            "name": "Ludovic Demblans",
+            "email": "ludovic@demblans.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
