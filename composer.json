@@ -7,5 +7,10 @@
             "email": "ludovic@demblans.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Lud\\Utils\\": "src/"
+        }
+    },
     "minimum-stability": "dev"
 }
