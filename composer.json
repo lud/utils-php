@@ -10,7 +10,8 @@
     "autoload": {
         "psr-4": {
             "Lud\\Utils\\": "src/"
-        }
+        },
+        "files": ["src/utils.php"]
     },
     "minimum-stability": "dev"
 }
