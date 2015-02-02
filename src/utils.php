@@ -1,10 +1,5 @@
-<?php
+<?php namespace Lud\Utils;
 
-function r($x) {
-	$trace = debug_backtrace(null,1);
-	$idx = strpos($trace[0]['file'], 'utils.php') ? 1 : 0;
-	$src = (object)$trace[$idx];
-	echo "<pre>call r() at {$src->file} line {$src->line}</pre>";
-	dump_r($x);
-	return $x;
+function toUTF8 ($str) {
+	return iconv(mb_detect_encoding($str, mb_detect_order(), true), "UTF-8", $str);
 }
