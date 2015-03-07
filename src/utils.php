@@ -2,10 +2,20 @@
 
 namespace Lud\Utils {
 
+	use DateTime;
+
 	function toUTF8 ($str) {
 		return iconv(mb_detect_encoding($str, mb_detect_order(), true), "UTF-8", $str);
 	}
 
+	/**
+	 * Returns the age of a person
+	 * @param  string $birthDate a string date yyyy-mm-dd
+	 * @return integer
+	 */
+	function age ($birthDate) {
+		return intval((new DateTime($birthDate))->diff(new DateTime('now'))->y);
+	}
 
 }
 
